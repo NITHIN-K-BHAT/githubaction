@@ -21,7 +21,7 @@ jobs:
  
       - name: Display Branch Name
         run: |
-           echo ${GITHUB_HEAD_REF}
+     
            pwd
            ls-la
            python demo.py
