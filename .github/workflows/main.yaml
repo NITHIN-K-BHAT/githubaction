@@ -17,7 +17,7 @@ jobs:
  
       - name: Install Packages
         run: |
-          pip install coverage
+          pip install flask
  
       - name: Display Branch Name
         run: |
@@ -29,5 +29,4 @@ jobs:
           chmod +x ${{ github.workspace }}/test.py
           python ${{ github.workspace }}/test.py
           coverage report -m --fail-under=80
-has context menu
-Compose
+
