@@ -27,10 +27,5 @@ jobs:
            # chmod 777 demo.py
            python demo.py
  
-      # - name: Unit Test
-      #   run: |
-      #     ls -al
-      #     chmod +x ${{ github.workspace }}/test.py
-      #     python ${{ github.workspace }}/test.py
-      #     coverage report -m --fail-under=80
+    
 
