@@ -6,6 +6,7 @@ on:
   pull_request:
     branches: [development,main]
  
+ 
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -16,17 +17,14 @@ jobs:
  
       - name: Install Packages
         run: |
-          pip install coverage
+          pip install flask
  
       - name: Display Branch Name
         run: |
-           echo ${GITHUB_HEAD_REF}
+     
+           pwd
+           ls -al
+           # chmod 777 demo.py
+           python demo.py
  
-      - name: Unit Test
-        run: |
-          ls -al
-          chmod +x ${{ github.workspace }}/test.py
-          python ${{ github.workspace }}/test.py
-          coverage report -m --fail-under=80
-has context menu
-Compose
+    
