@@ -24,7 +24,7 @@ jobs:
      
            pwd
            ls -al
-           chmod 777 demo.py
+           # chmod 777 demo.py
            python demo.py
  
       # - name: Unit Test
